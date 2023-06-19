@@ -1,14 +1,10 @@
--- Create the "sales" database
-CREATE DATABASE sales;
-
--- Switch to the "sales" database
-USE sales;
-
--- Create the "orders" table
-CREATE TABLE orders (
-  order_id INT,
-  customer_id INT,
-  order_date DATE,
-  order_total DECIMAL(10, 2)
+CREATE DATABASE todo_list;
+USE todo_list;
+CREATE TABLE tasks (
+  task_id INT PRIMARY KEY,
+  task_name VARCHAR(255),
+  description VARCHAR(255),
+  is_completed BOOLEAN
 );
+
 
